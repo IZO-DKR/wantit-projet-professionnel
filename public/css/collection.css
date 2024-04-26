@@ -1,0 +1,41 @@
+
+
+/* Styles CSS pour la page de collection */
+
+.collection {
+    padding: 20px;
+    color: black;
+  }
+  
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .product {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .product img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .product h3 {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #333;
+  }
+
+  /* Animation pour les produits */
+.animate-product {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }

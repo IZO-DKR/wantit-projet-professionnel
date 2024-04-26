@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* CSS commun */
+:root {
+  --cl-text:#ccc;
+  --cl-bg: #fff;
+  /* --bs-primary: blue
+  --bs-dark: dark */
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  min-height: 100vh;
+  font-family:  "Montserrat", sans-serif;
+  color: var(--cl-bg);
+  /* background: url("/public/img/bg-img.jpg"); */
+
+}
+
+/* Styles CSS pour la barre de navigation */
+.navbar {
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+
+}
+.menu-burger {
+  display: none;
+}
+.navbar .logo {
+  float: left;
+  display: block;
+  color: #000;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar .navbar-right {
+  float: right;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #000;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.active {
+  background-color: #ccc;
+}
+
+.navbar a:hover {
+  background-color: #f2f2f2;
+}
+
+.navbar .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar .navbar-right, .navbar a:not(:first-child) {
+    display: none;
+  }
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+
+  .menu-burger {
+    display: block;
+    float: right;
+    height: 50px;
+    width: 80px;
+  }
+
+}
+
+/* FOOTER */
+/* Styles CSS pour mon footer */
+
+.footer {
+  background-color: black;
+  padding: 50px 0;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-column {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  color: white;
+}
+
+.social-icons {
+  list-style: none;
+  padding: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-icons li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.social-icons li a:hover {
+  color:white;
+}
+
+img {
+  max-width: 100%;
+}
