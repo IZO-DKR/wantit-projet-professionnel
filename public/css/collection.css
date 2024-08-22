@@ -1,41 +1,445 @@
 
 
 /* Styles CSS pour la page de collection */
+.section-container-products{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 10px 1.6%;
+  gap: 25px;
+}
 
-.collection {
-    padding: 20px;
-    color: black;
-  }
-  
-  .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .product {
-    width: calc(25% - 20px);
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .product img {
-    width: 100%;
-    border-radius: 5px;
-  }
-  
-  .product h3 {
-    margin-top: 10px;
-    font-size: 18px;
-  }
-  
-  .price {
-    font-weight: bold;
-    color: #333;
-  }
+.container-products {
+  width: 100%;
+  height: 412px;
+  margin-bottom: 20px;
+}
 
-  /* Animation pour les produits */
-.animate-product {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-  }
+.product-links{
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.product-flowers{
+  width: 295px;
+  height: 412px;
+  margin-bottom: 20px;
+  box-shadow: 4px 6px 16px #eed7c5;
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.product-flowers > img{
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 5px;
+}
+
+.product-flowers h2{
+  text-align: center;
+  margin-top: 8px;
+  font-size: 1rem;
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  position: relative;
+}
+
+.product-flowers h2::before{
+  content: "";
+   position: absolute;
+   background-color: #ADD981;
+   width: 40px;
+   height: 3px;
+   left: 120px;
+   top: 22px;
+   bottom: 0px;
+}
+
+.product-price{
+  text-align: center;
+  margin-top: 5px;
+  color: #000;
+  font-family: "Nunito Sans", sans-serif; 
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.product-flowers p{
+  text-align: center;
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #111;
+  font-family: "Nunito Sans", sans-serif;
+}
+/* section de la carte de francr */
+
+.section-map-delivery{
+  margin-top: 30px;
+  padding: 10px 1.6%;
+}
+
+.title-delivery{
+  text-align: center;
+  padding-top: 25px;
+  font-size: 2.3rem;
+  font-family: "Nunito Sans", sans-serif;
+  color: #fcd5ce;
+}
+/* section-map-abouts */
+
+.section-map-abouts{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  padding: 0px 1%;
+}
+
+.title-map-metropolitan{
+  margin-top: 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.map-txt-about-fr{
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.map-txt-about-in{
+  margin-top: 20px;
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.title-map-metropolitan{
+  color: #000;
+  font-size: 1rem;
+}
+
+.map-txt-about-fr{
+  color: #000;
+  font-size: 1rem;
+}
+
+.map-txt-about-in{
+  color: #000;
+  font-size: 1rem;
+}
+
+.section-map-abouts{
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-map-city{
+  max-width: 550px;
+  margin-top: 30px;
+}
+
+.map-img{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  position: relative;
+}
+
+.map-img img{
+  width: 250px;
+}
+
+.send-french{
+  position: absolute;
+  top: 280px;
+  left: 170px;
+}
+
+.send-french-a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  background: #8bc34a;
+  padding: 8px 8px;
+  border-radius: 5px;
+  
+}
+
+.map-img .send-international{
+  position: absolute;
+  top: 280px;
+  left: 170px;
+}
+
+.send-international-a{
+  background: #8bc34a;
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: #fff;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 700;
+  padding: 8px 8px;
+  border-radius: 5px;
+}
+
+.ul-delivery-city{
+  list-style: none;
+}
+
+.delivery-city-a{
+  text-decoration: none;
+  font-size: 1.09rem;
+  color: #222;
+  font-family: "Nunito Sans", sans-serif;
+
+}
+
+.barre{
+  width: 1px;
+  min-height: 480px;
+  background: #b09e99;
+  margin-top: 55px;
+}
+
+/*section de choix dex fleurs*/
+.section-choice{
+  margin-top: 20px;
+  padding: 10px 1.6rem;
+  width: 100%;
+}
+
+.title-choice-flower{
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 1.4rem;
+  color: #222;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 500;
+}
+
+.choice-flowers{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.choice-flower > img{
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.choice-txt-p{
+  margin-top: 15px;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  color: #222;
+}
+
+/* section de container row */
+.section-container-about{
+  margin-top: 40px;
+  background: #b09e99;
+  width: 100vw;
+  padding: 10px 1.6%;
+}
+
+.section-container-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1%;
+}
+
+/* style de summary */
+.details-about-flowers {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.summary-about-flowers {
+  cursor: pointer;
+  padding: 10px;
+  /* background-color: #f0f0f0; */
+  list-style: none;
+  margin-left: 10px;
+}
+
+/* Masque le contenu des détails par défaut */
+.details-about-flowers > p {
+  display: none;
+}
+
+.img-icones{
+  position:absolute;
+  width: 28px;
+  top: 26px;
+  left: -15px;
+}
+
+/* Affiche le contenu des détails lorsque le details est ouvert */
+.details-about-flowers[open] > p {
+  display: block;
+}
+
+/* test les projet */
+.article-about-flowers{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.details-about-flowers{
+  width: 570px;
+}
+
+.summary-about-flowers{
+  margin-top: 20px;
+  margin-bottom: 15px;
+  font-size: 1.05rem;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 10px;
+}
+
+.details-about-flowers .text-about{ 
+  margin-bottom: 15px;
+  font-size: 1rem;
+  color: #000;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 25px;
+}
+
+.article-about-flowers hr{
+  margin-top: 30px;
+  width: 570px;
+  color:#222;
+}
+
+/* section de reseaux */
+.section-footer-reseaux{
+  margin-top: 0px;
+  background: #eddcd2;
+  padding-top: 20px;
+}
+
+.title-reseaux{
+  text-align: center;
+  font-size: 1.4rem;
+  color: #8bc34a;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+  font-weight: 500;
+}
+
+.footer-reseaux{
+  width: 100vw;
+  height: 150px;
+}
+
+.ul-reseaux-sociaux{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.ul-reseaux-sociaux .list-reseaux{
+  background: #8bc34a;
+  text-align: center;
+  width: 40px;
+  height: 40px; 
+  border-radius: 50%;
+  font-size: 1.4rem;
+  padding-top: 7px;
+}
+
+.list-reseaux .list-reseaux-a{
+  color: #fff;
+}
+
+.section-conatiner-services{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 3%;
+  margin-top: -50px;
+}
+
+.article-services{
+  max-width: 300px;
+}
+
+.container-service{
+width: 100%;
+}
+
+.title-services{
+  margin-top: 9px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #8bc34a;
+  font-family: "Nunito Sans", sans-serif;
+}
+.container-services .lists-items{
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.lists-items .list-item .list-item-link{
+  text-decoration: none;
+  color: #000;
+  font-size: 1.07rem;
+  font-family: "Nunito Sans", sans-serif;
+  line-height: 24px;
+}
+
+.paragraph-list{
+  color: #000;
+  font-size: 1.07rem ;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.lists-items-row{
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  list-style: none;
+  margin-top: 30px;
+}
+
+.list-item-link{
+  font-size: 2.3rem;
+  color: #8bc34a;
+}
+
+.footer-copyright{
+  background: #265073;
+  padding: 20px;
+}
+
+.text-copyright{
+  color: #fff;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+}
+
